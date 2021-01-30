@@ -3,4 +3,5 @@
 .DS_Store
 
 #artifacts
-reports/*.DS_Store
+reports/*
+
