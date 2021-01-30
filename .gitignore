@@ -3,5 +3,5 @@
 .DS_Store
 
 #artifacts
-
+reports/*
 
