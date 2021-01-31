@@ -23,6 +23,7 @@
   }
 
   async verifyAfterLoginPage() {
+    await page.waitForSelector(locators.inventory_container);
     const visible = await page.isVisible(locators.inventory_container);
     return expect(visible).to.equal(true);
   }
