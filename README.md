@@ -1,4 +1,4 @@
-![ubuntu](https://github.com/PrinceSoni83/playwright-cucumber-js-e2e-boilerplate/workflows/Playwright CI/badge.svg)
+![Playwright CI](https://github.com/PrinceSoni83/playwright-cucumber-js-e2e-boilerplate/workflows/Playwright CI/badge.svg)
 # playwright-cucumber-js-e2e-boilerplate
 
 [Playwright](https://github.com/microsoft/playwright) is a Single API to automate Chromium, Firefox and WebKit.
