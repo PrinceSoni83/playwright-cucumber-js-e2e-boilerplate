@@ -22,8 +22,22 @@ jobs:
       - name: Use Playwright github action
         uses: microsoft/playwright-github-action@v1
 
+      - name: run a shell
+        run: |
+         echo " which dir"
+         ls -a
+         pwd
+
+
       - name: Install dependencies
         run: npm install
 
+      - name: run a shell
+        run: |
+         echo " which dir"
+         ls -a
+         pwd
+
+         
       - name: Run Tests
         run: npm test
