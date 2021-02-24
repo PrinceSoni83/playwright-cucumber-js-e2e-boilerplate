@@ -6,7 +6,7 @@ const cucumber = require('../cucumber');
 
 // Launch options.
 const options = {
-  headless: false,
+  headless: true,
   slowMo: 100
 };
 
