@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/cucumber-js --require cucumber.js --require step-definitions/**/*.js --require features/**/*.js --format html:reports/cucumber_report.html --format summary --format @cucumber/pretty-formatter --no-strict --publish-quiet"
+    "test": "./node_modules/.bin/cucumber-js --require cucumber.js --require step-definitions/**/*.js --require features/**/*.js --format html:./reports/cucumber_report.html --format summary --format @cucumber/pretty-formatter --no-strict --publish-quiet"
   },
   "keywords": [],
   "author": "",
