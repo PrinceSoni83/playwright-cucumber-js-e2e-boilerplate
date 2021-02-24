@@ -1,0 +1,26 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Playwright CI
+
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+  e2e-tests:
+    runs-on: ubuntu-latest # or macos-latest, windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      
+      - name: Setuo Node
+        uses: actions/setup-node@v1
+      
+      - name: Use Playwright github action
+        uses: microsoft/playwright-github-action@v1
+
+      - name: Install dependencies and run tests
+        run: npm install && npm test
