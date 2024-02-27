@@ -4,16 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/cucumber-js --require cucumber.js --require step-definitions/**/*.js --require features/**/*.js --format html:./reports/cucumber_report.html --format summary --format @cucumber/pretty-formatter --no-strict --publish-quiet"
+    "e2e": "cross-env ./node_modules/.bin/cucumber-js --require cucumber.js --require step-definitions/**/*.js --require features/**/*.js --format html:./reports/cucumber_report.html --format summary --format @cucumber/pretty-formatter --no-strict --publish"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@cucumber/cucumber": "^7.0.0",
+    "@cucumber/cucumber": "^7.3.2",
     "@cucumber/pretty-formatter": "^1.0.0-alpha.0",
     "chai": "^4.2.0",
     "cucumber-html-reporter": "^5.3.0",
     "playwright": "^1.8.0"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3"
   }
 }
