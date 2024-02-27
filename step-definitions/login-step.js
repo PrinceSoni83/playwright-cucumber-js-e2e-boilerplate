@@ -14,3 +14,12 @@ When('I fill the login form with valid credentials', async function() {
 Then('I should be able to see the home screen', async function() {
   await loginPage.verifyAfterLoginPage();
 });
+
+
+When('I can conplete 1 product lifecycle', async function() {
+  await loginPage.submitLoginForm();
+});
+
+Then('I should be able to see product purchased', async function() {
+  await loginPage.verifyAfterLoginPage();
+});
